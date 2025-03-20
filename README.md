@@ -2,7 +2,7 @@
 
 ## Overview
 
-Travel Assistant is a full-stack application that helps users discover top tourist attractions, view related YouTube videos, and find the cheapest hotels for a given location. The backend is built using Flask, OpenAI API, and YouTube Data API, while the frontend is developed with React and Framer Motion for animations.
+This project is a Travel Itinerary Generator that helps users plan their trips by generating a detailed itinerary for a given destination and number of days. It also provides recommended YouTube videos related to the destination for additional travel inspiration.
 
 ## UI preview
 
@@ -11,71 +11,20 @@ Travel Assistant is a full-stack application that helps users discover top touri
 
 ## Features
 
-- Retrieve the top 5 tourist attractions for a specified location.
-- Fetch the most-watched YouTube video related to each attraction.
-- Find the cheapest available hotel in the location.
-- User-friendly React-based frontend with animations.
-- API-powered responses for reliable travel recommendations.
+Itinerary Generation: Generates a detailed travel plan for a specified destination and number of days using OpenAI's GPT-4.
+YouTube Integration: Fetches relevant YouTube videos for the destination using the YouTube Data API.
+User-Friendly UI: A React-based frontend for easy interaction and display of the itinerary and videos.
 
 ## Technologies Used
 
-### Backend (Flask)
+Backend: Flask (Python)
+Frontend: React (JavaScript)
 
-- Python
-- Flask
-- OpenAI API
-- YouTube Data API
-- Flask-CORS
+APIs:
+OpenAI API (GPT-4 for itinerary generation)
+YouTube Data API (for fetching videos)
 
-### Frontend (React)
-
-- React
-- Framer Motion (animations)
-- Axios (HTTP requests)
-- Tailwind CSS (styling)
-
-## Usage
-
-1. Open the frontend in your browser (usually at `http://localhost:3000`).
-2. Enter a location in the search bar and click "Search".
-3. View the top 5 attractions along with their descriptions.
-4. Watch related YouTube videos by clicking on the thumbnails.
-5. Check the cheapest available hotel in the selected location.
-
-## API Endpoints
-
-### `POST /destination`
-
-**Request:**
-
-```json
-{
-  "userInput": "Paris"
-}
-```
-
-**Response:**
-
-```json
-[
-  {
-    "name": "Eiffel Tower",
-    "description": "A world-famous iron lattice tower in Paris.",
-    "youtube_video": {
-      "title": "Eiffel Tower Travel Guide",
-      "link": "https://www.youtube.com/watch?v=example",
-      "thumbnail": "https://img.youtube.com/example.jpg"
-    },
-    "cheapest_hotel": {
-      "name": "Hotel Paris",
-      "price": "$100 per night"
-    }
-  }
-]
-```
-
-## Future Improvements
-
-- Integrate Google Places API for more accurate hotel pricing.
-- Add user authentication to save favorite destinations.
-- Improve UI with interactive maps.
+Other Libraries:
+dotenv for environment variable management
+flask_cors for enabling CORS in the backend
+axios for making API calls from the frontend

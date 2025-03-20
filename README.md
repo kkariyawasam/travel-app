@@ -6,6 +6,9 @@ Travel Assistant is a full-stack application that helps users discover top touri
 
 ## UI preview
 
+<img width="943" alt="image" src="https://github.com/user-attachments/assets/f953ce5b-306c-4d87-b4cd-bb6a380ab85b" />
+
+
 ## Features
 
 - Retrieve the top 5 tourist attractions for a specified location.

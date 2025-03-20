@@ -4,6 +4,8 @@
 
 Travel Assistant is a full-stack application that helps users discover top tourist attractions, view related YouTube videos, and find the cheapest hotels for a given location. The backend is built using Flask, OpenAI API, and YouTube Data API, while the frontend is developed with React and Framer Motion for animations.
 
+## UI preview
+
 ## Features
 
 - Retrieve the top 5 tourist attractions for a specified location.
